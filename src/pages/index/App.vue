@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <test-header />
-        <img alt="Vue logo" src="../../assets/logo.png" />
+        <test-header title="首页"/>
+            
         <test-footer />
     </div>
 </template>
@@ -23,6 +23,5 @@ export default class App extends Vue {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
 }
 </style>

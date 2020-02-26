@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <test-header />
-         help
+        <test-header :title="name"/>
+         
         <test-footer />
     </div>
 </template>
@@ -12,7 +12,7 @@ import { isFunction } from '@/libs/utils'
 
 @Component
 export default class App extends Vue {
-    private name: string = isFunction(null) ? '' : 'gggggg'
+    private name: string = isFunction(null) ? '' : '帮助中心'
 }
 </script>
 
@@ -23,6 +23,5 @@ export default class App extends Vue {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
 }
 </style>
